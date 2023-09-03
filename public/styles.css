@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  color: #39ff14;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: monospace;
+}
+
+.boxy {
+  border-width: 3px;
+  border: 2px solid #39ff14;
+}
