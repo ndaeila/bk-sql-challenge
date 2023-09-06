@@ -23,9 +23,7 @@
         let tableCreator = (function(resp) {
           console.log(resp);
           let table = document.createElement("table");
-          if (document.getElementById("output_field").innerHTML != null) {
-            document.getElementById("output_field").innerHTML = "";
-          }
+
           table.setAttribute("id", "sql_table");
           let header = document.createElement("tr");
 
@@ -61,6 +59,10 @@
 
           return table;
         });
+
+        if (document.getElementById("output_field").innerHTML != null) {
+          document.getElementById("output_field").innerHTML = "";
+        }
 
         document.getElementById('output_field').appendChild(tableCreator(resp));
       })
