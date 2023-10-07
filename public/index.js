@@ -52,7 +52,7 @@
 
             table.appendChild(row);
           }
-          
+
           if (searchList.length === 0) {
             table.innerHTML = "";
           }
